@@ -1,0 +1,42 @@
+{
+    "name": "jsonbaby/event-serializer",
+    "description": "Event serialzer",
+    "type": "package",
+    "require": {
+        "php": "^8.0.2",
+        "jsonbaby/serializer-base": "^0.0.1",
+        "jsonbaby/event-serializer-base": "^0.0.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5.8",
+        "vimeo/psalm": "5.x-dev",
+        "mockery/mockery": "dev-master"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Olexandr Dolbin",
+            "email": "olexandr.dolbin@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Jsonbaby\\EventSerializer\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Jsonbaby\\EventSerializer\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "psalm": "vendor/bin/psalm",
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
